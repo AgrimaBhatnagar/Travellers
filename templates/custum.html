@@ -1,0 +1,59 @@
+{%extends 'base.html'%}
+{%block title%} Special Offers {%endblock title%}
+
+{%block body%}
+<div class="container"><div class="form px-1" type="text-centre">
+  <form method="post" action="/custum">
+  {% csrf_token %}
+    <div class="col-md-3">
+      <label for="name" >Name</label>
+      <input type="text"  class="form-control" id="name" name="name">
+      <h2> </h2>
+    </div>
+
+    <div class="col-md-4">
+      <label for="phone" >Phone Number</label>
+      <input type="phone" class="form-control"  id="phone" name="phone">
+    </div>
+    <div class="col-3">
+      <label for="email" >Email</label>
+      <input type="email"  class="form-control" id="email" name="email">
+    </div>
+    <div class="col-4">
+      <label for="password" >Password</label>
+      <input type="password"   class="form-control" id="password" name="password">
+    </div>
+    <div class="col-6">
+      <label for="flighttakeofflocation" >Flight TakeOff Location</label>
+      <input type="text" class="form-control" id="flighttakeofflocation" placeholder="City, Country, Continent" name ="flighttakeofflocation">
+    </div>
+    <div class="col-6">
+      <label for="flightlandonlocation" >Flight LandOn Location</label>
+      <input type="text"  class="form-control" id="flightlandonlocation" placeholder="City, Country,Continent" name="flightlandonlocation">
+    </div>
+    <div class="col-md-4">
+      <label for="duration" >Duration of stay</label>
+      <input type="text"   class="form-control" id="duration" name="duration">
+    </div>
+    <div class="col-md-4">
+      <label for="hotels" class="form-label">Hotels(of choice)</label>
+      <input id="hotels"   class="form-select"  name="hotels" >
+        
+      
+    </div>
+    
+    <div class="col-md-8">
+      <label for="tripgoal" >Please Mention The Goal of Your Trip </label>
+      <input type="text"    class="form-control" id="tripgoal" name="tripgoal">
+      <h2> </h2>
+    </div>
+
+
+    
+    <div class="col-12">
+      <button type="submit" class="btn btn-danger">submit</button>
+      
+    </div>
+  </form></div></div>
+
+{%endblock body%}

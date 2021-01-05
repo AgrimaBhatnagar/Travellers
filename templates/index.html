@@ -1,0 +1,200 @@
+{%extends 'base.html'%}
+{%block title%} Home {%endblock title%}
+
+{%block body%}
+<div class="container-fluid my-4 px-0" ><div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/images/indian2.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Padharo Mhare Desh</h5>
+          <p>Unity In Diversity.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/images/japan.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome To The Land Of Rising Sun </h5>
+          <p>Ukiyo.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/images/iceland.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Iceland</h5>
+          <p>I Followed My Heart And It Led Me To Iceland.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div></div>
+
+
+
+</header>
+
+<main>
+
+
+
+
+  <div class="container my-3">
+   <h1 class="my-4  text-center">Choose Your Destination</h1>   
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/images/africa.jfif" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text">Africa.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a class="btn btn- btn-outline-secondary" href="/africa">Views</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+         <img src="/static/images/antartica.jfif" class="d-block w-100" alt="...">   
+          <div class="card-body">
+            <p class="card-text">Antartica.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a class="btn btn- btn-outline-secondary" href="/antartica">Views</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/images/china.jfif" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text">Asia.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a class="btn btn- btn-outline-secondary" href="/asia">Views</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/images/australia.jfif" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text"> Australia.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a class="btn btn- btn-outline-secondary" href="/australia">Views</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/images/europe2.jfif" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text">Europe.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a class="btn btn- btn-outline-secondary" href="/europe">Views</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/images/usa.jfif" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text">North America.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a class="btn btn- btn-outline-secondary" href="/northamerica">Views</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="/static/images/southamerica.jfif" class="d-block w-100" alt="...">
+          <div class="card-body">
+            <p class="card-text">South America.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a class="btn btn- btn-outline-secondary" href="/southamerica">Views</a>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+
+
+
+  <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
+{%endblock body%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
