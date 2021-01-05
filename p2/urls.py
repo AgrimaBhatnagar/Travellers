@@ -19,8 +19,11 @@ from django.urls import path,include
 admin.site.site_header = "Travellers Admin"
 admin.site.site_title = "Travellers Admin Portal"
 admin.site.index_title = "Welcome to Travellers Researcher Portal"
-
+from django.views.static import serve
+from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('hello.urls'))
+    path('',include('hello.urls')),
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]
